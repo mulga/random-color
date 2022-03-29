@@ -40,8 +40,10 @@ img {
   padding: 0 20px;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
 }
 
 #color {
@@ -50,4 +52,14 @@ img {
   color: var(--white);
 
   text-shadow: 2px 2px 0 #ff8800, 4px 4px 0 #ff9203;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-sec);
 }
